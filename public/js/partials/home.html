@@ -1,0 +1,26 @@
+
+<section class="main--container content main--container__login lyt--full-width">
+  <header class="main--header animatable">
+    <div class="logo">
+      <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+    </div>
+  </header>
+  <div class="content--chef animatable"></div>
+  <div class="content--container content--container__login">
+    <div>
+        <div class="" ng-if="!vm.isAuthenticated()">
+          <a class="button button--signup__facebook" href="/#/login">Subscribe with Facebook</a>
+        </div>
+        <div class="" ng-if="vm.isAuthenticated()">
+          <nav class="nav nav__profile">
+            <ul>
+              <li><a ng-href="/#/profile">Profile</a></li>
+              <li><a ng-href="/#/logout">Logout</a></li>
+              <li><a ng-href="/#/gallery">Gallery</a></li>
+              <li><a ng-href="/#/collage">Create Collages</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+.lyt{
+  &--full-width{
+    width:100%;
+  }
+  &--relative{
+    position: relative;
+  }
+  &--absolute{
+    position: absolute;
+  }
+}

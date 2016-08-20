@@ -1,0 +1,45 @@
+::root{
+  font-size: 16px;
+
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+body{
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+// utility classes
+.border-box{
+  box-sizing: border-box;
+}
+.visually--hidden{
+  @extend .lyt--absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.thumbnail{
+  width: 100%;
+  height: auto;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

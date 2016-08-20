@@ -1,0 +1,34 @@
+
+<section class="main--container main--container__register lyt--full-width content">
+  <header class="main--header main--header__register animatable">
+    <div class="logo">
+      <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+    </div>
+  </header>
+  <div class="content--chef animatable content--chef__register"></div>
+  <div class="content--container content--container__register">
+      <header class="content--header">
+        <h2 class="content--title content--title__primary">{{user.displayName}}</h2>
+      </header>
+      <form class="dropzone"
+              method="post"
+              enctype="multipart/form-data"
+              ng-dropzone
+              dropzone="vm.dropzone"
+              dropzone-config="vm.dropzoneConfig"
+              event-handlers="{ 'addedfile': vm.dzAddedFile, 'error': vm.dzError }">
+              <input type="hidden" name="_token" value="{{vm.crfToken.token}}">
+              <input type="hidden" name="collage_id" value="{{vm.collage.id}}">
+        </form>
+        <button class="btn button button__publish" ng-click="vm.publish()">
+          PUBLISH
+        </button>
+      <nav class="nav nav__profile">
+        <ul>
+          <li><a ng-href="/#/profile">Profile</a></li>
+          <li><a ng-href="/#/logout">Logout</a></li>
+          <li><a ng-href="/#/gallery">Collages Gallery</a></li>
+        </ul>
+      </nav>
+  </div>
+</section>

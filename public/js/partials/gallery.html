@@ -1,0 +1,28 @@
+
+<section class="main--container main--container__register lyt--full-width content">
+  <header class="main--header main--header__register animatable">
+    <div class="logo">
+      <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+    </div>
+  </header>
+  <div class="content--chef animatable content--chef__register"></div>
+  <div class="content--container content--container__register">
+      <header class="content--header">
+        <h2 class="content--title content--title__primary">{{user.displayName}}</h2>
+      </header>
+      <ul class="gallery">
+        <li class="gallery--list" ng-repeat="collage in vm.collages">
+            <a class="gallery--link" ng-click="vm.gotoCollage(collage)">
+              <img class="thumbnail"src="/images/icon_size/{{collage.thumbnail}}" alt="" />
+            </a>
+        </li>
+      </ul>
+      <nav class="nav nav__profile">
+        <ul>
+          <li><a ng-href="/#/profile">Profile</a></li>
+          <li><a ng-href="/#/logout">Logout</a></li>
+          <li><a ng-href="/#/collage">Create Collage</a></li>
+        </ul>
+      </nav>
+  </div>
+</section>

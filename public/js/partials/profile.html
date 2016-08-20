@@ -1,0 +1,43 @@
+
+<section class="main--container main--container__register lyt--full-width content">
+  <header class="main--header main--header__register animatable">
+    <div class="logo">
+      <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+    </div>
+  </header>
+  <div class="content--chef animatable content--chef__register"></div>
+  <div class="content--container content--container__register">
+      <header class="content--header">
+        <h2 class="content--title content--title__primary">{{user.displayName}}</h2>
+        <h3 class="content--title content--title__secondary">Complete your profile to create your collage</h3>
+      </header>
+      <form class="form form__register lyt--realtive" ng-submit="updateProfile()">
+        <div class="form--element lyt--full-width">
+          <label class="form--label form--label__register" for="username">Name:</label>
+          <input type="text" class="form--input-text form--input-text__register" ng-model="user.displayName" />
+        </div>
+        <div class="form--element lyt--full-width">
+          <label class="form--label form--label__register" for="username">Country:</label>
+          <input type="text" class="form--input-text form--input-text__register" ng-model="user.country" />
+        </div>
+        <div class="form--element lyt--full-width">
+          <label class="form--label form--label__register" for="username">Nationality:</label>
+          <input type="text" required class="form--input-text form--input-text__register" ng-model="user.nationality" >
+        </div>
+        <div class="form--element lyt--full-width">
+          <label class="form--label form--label__register" for="username">Mobile:</label>
+          <input type="text" required class="form--input-text form--input-text__register" ng-model="user.mobile" >
+        </div>
+        <div class="form--element lyt--full-width">
+          <button class="button button__register">SUBMIT</button>
+        </div>
+      </form>
+      <nav class="nav nav__profile">
+        <ul>
+          <li><a ng-href="/#/logout">Logout</a></li>
+          <li><a ng-href="/#/gallery">Gallery</a></li>
+          <li><a ng-href="/#/collage">Create Collage</a></li>
+        </ul>
+      </nav>
+  </div>
+</section>

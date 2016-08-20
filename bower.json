@@ -1,0 +1,16 @@
+{
+  "name": "laravel5-angular-material-starter",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "satellizer": "^0.15.4",
+    "angular-ui-router": "^0.3.1",
+    "dropzone": "^4.3.0",
+    "angular-dropzone": "^0.1.2",
+    "angular-messages": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "angular-toastr": "^2.0.0",
+    "angular-animate": "^1.5.8"
+  }
+}

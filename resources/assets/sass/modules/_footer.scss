@@ -1,0 +1,18 @@
+.main{
+  &--footer{
+    height: 27px;
+    background-color: #fff;
+  }
+}
+.footer{
+  &--link{
+    text-decoration: none;
+    color: #333;
+    font-family: 'Pacifico';
+    font-size: 0.8em;
+    padding: 0px 2em;
+    &__right{
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.main{
+  &--header{
+    @extend .lyt--absolute;
+    width: $content-width - 50px;
+    height: $content-width - 50px;
+    left: 25px;
+    top: 25px;
+    border-radius: 50%;
+    border: 0.5em solid $main-color;
+    background: rgba($main-color-dark, 0.8) url(../img/login--logo.png);
+    background-size: 64%;
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    &__register{
+      background: rgba($main-color-dark, 0.8) url(../img/register--logo.png);
+      width: 200px;
+      height: 200px;
+      background-size: 64%;
+      background-repeat: no-repeat;
+      background-position: center 40px;
+    }
+  }
+}

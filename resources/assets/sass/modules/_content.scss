@@ -1,0 +1,69 @@
+.content{
+  position: relative;
+  &--container{
+    @extend .lyt--absolute;
+    bottom: 80px;
+    width: $content-width;
+    background-color: $main-color;
+    min-height: 140px;
+    &__register{
+      right: 1em;
+      top: 0;
+      bottom:0;
+      background-color: rgba(#fff, 0.8);
+      width: $content-width + 100px;
+    }
+  }
+
+  &--chef{
+    @extend .lyt--absolute;
+    bottom: 3em;
+    right: 3em;
+    width: 382px;
+    height: 393px;
+    background: url(../img/login--chef.png);
+    &__register{
+      left: 1em;
+      bottom: 0;
+      width: 266px;
+      height: 350px;
+      background: url(../img/register--chef.png);
+    }
+  }
+
+  &--header{
+    padding: 0 3em;
+    text-align: center;
+  }
+
+  &--title{
+
+    &__primary{
+      margin-top: 1em;
+      font-style: italic;
+      font-weight: bolder;
+    }
+    &__secondary{
+      font-weight: 300;
+      font-size: 1.1em;
+    }
+  }
+}
+
+.gallery{
+  @extend .cf;
+  list-style-type: none;
+  padding: 0;
+  margin: 3em;
+  width: 100%;
+  &--list{
+    @extend .border-box;
+    width: 80px;
+    float: left;
+    margin: 10px;
+    border: 3px solid $main-color;
+    &__show{
+      width: 120px;
+    }
+  }
+}

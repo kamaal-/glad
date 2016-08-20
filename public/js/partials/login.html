@@ -1,0 +1,26 @@
+<section class="main--container content main--container__login lyt--full-width">
+  <header class="main--header animatable">
+    <div class="logo">
+      <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+    </div>
+  </header>
+  <div class="content--chef animatable"></div>
+  <div class="content--container content--container__login">
+      <form class="form lyt--realtive" action="">
+        <div class="form--element lyt--full-width">
+          <label class="form--label" for="username">Usename:</label>
+          <input required class="form--input-text" placeholder="johndoe" type="text" name="username" value="">
+        </div>
+        <div class="form--element lyt--full-width">
+          <label class="form--label" for="password">Password:</label>
+          <input required class="form--input-text" type="password" name="password" value="">
+        </div>
+        <div class="form--element lyt--full-width">
+          <button class="button button__login">ENTER</button>
+        </div>
+      </form>
+      <button class="btn button button__login__facebook" ng-click="authenticate('facebook')">
+        OR Sign in with Facebook
+      </button>
+  </div>
+</section>

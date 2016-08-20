@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laravel</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css" media="screen">
+    </head>
+    <body ng-app="glad">
+        <div class="main main__shadow">
+          <section class="main--container main--container__register lyt--full-width content">
+            <header class="main--header main--header__register animatable">
+              <div class="logo">
+                <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+              </div>
+            </header>
+            <div class="content--chef animatable content--chef__register"></div>
+            <div class="content--container content--container__register">
+                <header class="content--header">
+                  <h2 class="content--title content--title__primary">Collage</h2>
+                </header>
+                <form class="form form__register lyt--realtive" action="">
+                </form>
+            </div>
+          </section>
+          <footer class="main--footer footer">
+            <a class="footer--link footer--link__left" href="#">Privacy Policy</a>
+            <a class="footer--link footer--link__right" href="#">Terms &amp; Conditions</a>
+          </footer>
+        </div>
+
+    <script id="login.html" type="text/template">
+      <section class="main--container content main--container__login lyt--full-width">
+        <header class="main--header animatable">
+          <div class="logo">
+            <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+          </div>v
+        </header>
+        <div class="content--chef animatable"></div>
+        <div class="content--container content--container__login">
+            <form class="form lyt--realtive" action="">
+              <div class="form--element lyt--full-width">
+                <label class="form--label" for="username">Usename:</label>
+                <input required class="form--input-text" placeholder="johndoe" type="text" name="username" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <label class="form--label" for="password">Password:</label>
+                <input required class="form--input-text" type="password" name="password" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <button class="button button__login">ENTER</button>
+              </div>
+            </form>
+        </div>
+      </section>
+    </script>
+
+    <script id="login.html" type="text/template">
+      <section class="main--container main--container__register lyt--full-width content">
+        <header class="main--header main--header__register animatable">
+          <div class="logo">
+            <h1 class="logo--title visually--hidden">GLAD ARABIA COOKING CHALLANGE 2013</h1>
+          </div>
+        </header>
+        <div class="content--chef animatable content--chef__register"></div>
+        <div class="content--container content--container__register">
+            <header class="content--header">
+              <h2 class="content--title content--title__primary">Register</h2>
+              <span class="content--image">
+                <img src="img/ckng.png" alt="" />
+              </span>
+              <h3 class="content--title content--title__secondary">Register to create your collage</h3>
+            </header>
+            <form class="form form__register lyt--realtive" action="">
+              <div class="form--element lyt--full-width">
+                <label class="form--label form--label__register" for="username">Name:</label>
+                <input required class="form--input-text form--input-text__register" placeholder="johndoe" type="text" name="username" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <label class="form--label form--label__register" for="username">Country:</label>
+                <input required class="form--input-text form--input-text__register" placeholder="johndoe" type="text" name="username" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <label class="form--label form--label__register" for="username">Mobile:</label>
+                <input required class="form--input-text form--input-text__register" placeholder="johndoe" type="text" name="username" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <label class="form--label form--label__register" for="username">Usename:</label>
+                <input required class="form--input-text form--input-text__register" placeholder="johndoe" type="text" name="username" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <label class="form--label form--label__register" for="password">Password:</label>
+                <input required class="form--input-text form--input-text__register" type="password" name="password" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <label class="form--label form--label__register" for="password">Password Repeat:</label>
+                <input required class="form--input-text form--input-text__register" type="password" name="password" value="">
+              </div>
+              <div class="form--element lyt--full-width">
+                <button class="button button__register">SUBMIT</button>
+              </div>
+            </form>
+        </div>
+      </section>
+    </script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>

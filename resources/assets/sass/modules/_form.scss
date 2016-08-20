@@ -1,0 +1,101 @@
+.form{
+  margin: 1em;
+  &__register{
+    margin: 3em;
+  }
+  &--element{
+      margin-bottom: 5px;
+  }
+  &--input-text{
+    @extend .border-box;
+    height: 22px;
+    border:none;
+    padding: 12px 15px;
+    border-bottom: 1px dotted $accent-color-dark;
+    &__register{
+      width: 100%;
+    }
+  }
+  &--label{
+    font-weight: bolder;
+    padding-right: 1em;
+    width: 80px;
+    display: inline-block;
+    &__register{
+      width:100%;
+      margin-top: 5px;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.button{
+  @extend .lyt--absolute;
+  background-color: $accent-color;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bolder;
+  width: 80px;
+  height: 35px;
+  cursor: pointer;
+  &::after, &::before{
+    content: '';
+    width: inherit;
+    height:2px;
+    position: absolute;
+    left: 0px;
+    display: inline;
+    background-color: $accent-color-dark;
+  }
+  &::before{
+    bottom: 2px;
+  }
+  &::after{
+    top: 2px;
+  }
+  &--signup{
+
+      &__facebook{
+          width: 200px;
+          text-decoration: none;
+          color: #fff;
+          line-height: 35px;
+          font-size: 0.7em;
+          text-align: center;
+          text-transform: uppercase;
+          top: 20px;
+          left: 60px;
+      }
+  }
+  &__login{
+    right: 1em;
+    top: 1.8em;
+    &__facebook{
+      right: 1em;
+      top: 5.5em;
+      width: 250px;
+      text-transform: uppercase;
+    }
+  }
+  &__register{
+    right: -20px;
+    bottom: 3em;
+    width: 150px;
+    text-align: left;
+    background: $accent-color url(../img/register--btn-pan.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+  }
+
+  &__publish{
+    background-color: $main-color;
+    color: #333;
+    width: 150px;
+    right: -1em;
+    bottom: 1em;
+  }
+}
